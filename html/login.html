@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+
+        body main{
+            max-width: 410px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15%;
+        }
+
+        fieldset {
+            padding: 7px;
+        }
+
+        fieldset p {
+            margin-bottom: 5px;
+        }
+
+        fieldset legend {
+            padding: 3px;
+        }
+        fieldset input[type=text], input[type=password] {
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            outline: none;
+
+        }
+
+        fieldset input[type=submit] {
+            background-color: crimson;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            float: right;
+            margin: 5px 5px 0px 5px;
+        }
+
+        fieldset input[type=submit]:active {
+            background-color: rgb(192, 26, 59);
+        }
+
+        #user_info_container {
+            display: none;
+        }
+
+        #whyregister {
+            margin-top: 20em;
+            position: relative;
+            background-color: #8853ac;
+            padding-bottom: 0.7em;
+            max-width: 200rem;
+        }
+
+        #whyregister h1{
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            text-decoration: underline;
+            padding-top: 0.7em;
+        }
+
+        #whyregister p {
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 0.7em;
+        }
+
+        #whyregister #leftsideimg {
+            float: right;
+            margin-top: 18%;
+            margin-right: 23rem;
+        }
+
+        #whyregister #computer {
+            
+            width: 20rem;
+            margin-left: 40%; 
+            margin-top: 1em;
+            box-shadow: -2px 1px 14px 0px black;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+            <fieldset>
+                <legend>Login</legend>
+                <p>
+                    <label for="username">Your name goes here:</label>
+                    <input type="text" id="username" required>
+                </p>
+                
+                <p>
+                    <label for="password">Your password goes here:</label>
+                    <input type="password" name="password" id="password" required>
+                </p>
+
+                <input type="submit" id="submit_btn" value="Confirm">
+                <input type="submit" id="createUser_btn" value="Register">
+                <input type="submit" id="Erase_btn" value="Clear">
+            </fieldset>
+        <aside id="user_info_container">
+            <fieldset>
+                <legend>Your Info</legend>
+                <p id="user_info"></p>
+            </fieldset>
+        </aside>
+    </main>
+
+    <aside id="whyregister">
+        <h1>Why Register?</h1>
+        <p>If you register, you'll be able to create an account on our server, and save your projects to access everywhere on different computers </p>
+        <img src="imagens/Computer.png" alt="" id="computer">
+        <p id="leftsideimg">Person using ours system</p>
+    </aside>
+
+    <script src="scriptlogin.js"></script>
+</body>
+</html>
