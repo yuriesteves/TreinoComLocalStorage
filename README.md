@@ -3,4 +3,4 @@
 
 eu estou aprendendo a gerenciar meus repositórios!
 
-<a href="https://yuriesteves.github.io/TreinoComLocalStorage/html/login.html">Site de teste</a>
+<a href="D:\visual studio\estudo pra faetec\2projetos em javascript\TreinoComLocalStorage\html/.login.html">Site de teste</a>
